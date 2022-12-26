@@ -18,17 +18,17 @@ namespace Homework_7
                 option = Console.ReadLine();
                 if (option == "1")
                 {
-                    User newUser=createUser();
-                    users = addUser(ref users, newUser);
+                    User newUser=CreateUser();
+                    users = AddUser(ref users, newUser);
 
                 }
                 else if (option == "2")
                 {
-                    lookUsers(users);
+                    LookUsers(users);
                 }
                 else if (option == "3")
                 {
-                    findSearch(users);
+                    FindSearch(users);
                 }
                 else if (option == "0")
                 {
@@ -39,14 +39,14 @@ namespace Homework_7
 
         }
 
-        static User createUser()
+        static User CreateUser()
         {
             User newUser = new User(null);
             do
             {
                 Console.WriteLine("adini yaz: ");
                 string userNameStr = Console.ReadLine();
-                newUser.UserName = (userNameStr);
+                newUser.UserName = (userNameStr.ToLower());
 
             } while (newUser.UserName == null);
             do
@@ -54,27 +54,23 @@ namespace Homework_7
                 Console.WriteLine("Password yaz: ");
                 string passwordStr = Console.ReadLine();
                 newUser.Password = (passwordStr);
-
             } while (newUser.Password == null);
             newUser.DateTime = DateTime.Now.ToString();
             return newUser;
         }
-        static User[] addUser(ref User[] arr,User newUser)
+        static User[] AddUser(ref User[] arr,User newUser)
         {
-            User[] arr2 = new User[arr.Length + 1]; 
-            for(int i = 0; i < arr.Length; i++)
-            {
-                arr2[i] = arr[i];
-            }
-            arr2[arr2.Length-1] = newUser;
-            return arr2;
+            Array.Resize(ref arr, arr.Length + 1);
+            arr[arr.Length - 1] = newUser;
+            return arr;
         }
-        static void findSearch(User[] arr)
+        static void FindSearch(User[] arr)
         {
             Console.Write("Axtaris deyerini daxil edin: ");
             String search=Console.ReadLine();
             for(int i = 0; i < arr.Length; i++)
             {
+                search = search.ToLower();
                 if (arr[i].UserName.Contains(search))
                 {
                     Console.WriteLine("Username: "+arr[i].UserName);
@@ -82,7 +78,7 @@ namespace Homework_7
                 }
             }
         }
-        static void lookUsers(User[] arr)
+        static void LookUsers(User[] arr)
         {
             for(int i=0;i<arr.Length;i++)     
             {

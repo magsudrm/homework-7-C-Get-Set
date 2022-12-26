@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Homework 7\\Homework 7\\Homework 7.csproj": {}
+    "C:\\Users\\Maqsud\\Desktop\\Homeworks\\homework-7-C-Get-Set\\Homework 7\\Homework 7\\Homework 7.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Homework 7\\Homework 7\\Homework 7.csproj": {
+    "C:\\Users\\Maqsud\\Desktop\\Homeworks\\homework-7-C-Get-Set\\Homework 7\\Homework 7\\Homework 7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Homework 7\\Homework 7\\Homework 7.csproj",
+        "projectUniqueName": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\homework-7-C-Get-Set\\Homework 7\\Homework 7\\Homework 7.csproj",
         "projectName": "Homework 7",
-        "projectPath": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Homework 7\\Homework 7\\Homework 7.csproj",
+        "projectPath": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\homework-7-C-Get-Set\\Homework 7\\Homework 7\\Homework 7.csproj",
         "packagesPath": "C:\\Users\\Maqsud\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\Homework 7\\Homework 7\\obj\\",
+        "outputPath": "C:\\Users\\Maqsud\\Desktop\\Homeworks\\homework-7-C-Get-Set\\Homework 7\\Homework 7\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Maqsud\\AppData\\Roaming\\NuGet\\NuGet.Config",
